@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(115, 137, 137);
+}
+
+header{
+    position: relative;
+}
+
+header img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter:brightness(0.5);
+}
+
+header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(104, 109, 164);
+    text-align: center;
+}
+
+header-text h1{
+    font-size: 50px;
+    
+}
+
+header-text p{
+    font-size: 20px;
+}
+
+header-text button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+}
+
+.features{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature{
+    flex:1;
+    text-align: center;
+}
+
+.feature img{
+    width:100px;
+    height:100px;
+}
+
+.feature h2{
+    margin: 10px 0;
+}
+
+.feature button{
+    background-color: #ffffff48;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.feature{
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover{
+    background-color: rgb(51, 3, 96);
+    transform: translate(-5px);
+}
+
+.testimonials{
+    background-color: #929292;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border: 2px solid black;
+
+}
+
+.testimonials h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial{
+    background-color: rgba(58, 53, 117, 0.441);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.author{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.testimonials{
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial{
+    animation: defilement 10s infinite;
+}
+
+.testimonial:nth-of-type(1){
+    animation-delay: 0s;
+}
+
+.testimonial:nth-of-type(2){
+    animation-delay: 3s;
+}
+
+.testimonial:nth-of-type(3){
+    animation-delay: 6s;
+}
+
+@keyframes defilement{
+    0% {opacity: 0; transform: translateX(50px);}
+    10% {opacity: 1; transform: translateX(0);}
+    40% {opacity: 1;}
+    50% {opacity: 0; transform: translateX(-50px);}
+    100% {opacity: 0;}
+}
+
+@media (max-width: 768px){
+    .features{
+        flex-direction: column;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .header-text p{
+        font-size: 16px;
+    }
+}
