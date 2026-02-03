@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Crèmerie De Coin :: Saveurs</title>
+        <link href="css/main.css" rel="stylesheet" />
+        
+
+    </head>
+
+    <body>
+        <main id="saveur">
+            <header>
+                <p>Crèmerie du Coin</p>
+            </header>
+            <section>
+               <h1>Liste des saveurs</h1>
+                   <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom de la saveur</th>
+                            <th>Prix</th>
+                            <th>&#160;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Fraise</td>
+                            <td>3$</td>
+                            <td><button>Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Chocolat</td>
+                            <td>4$</td>
+                            <td><button>Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Double chocolat</td>
+                            <td>4$</td>
+                            <td><button>Supprimer</button></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <h1>Ajouter une saveur</h1>
+
+                <form id="frmAjoutSaveur">
+
+                    <label for="nom">Nom de la saveur</label>
+
+                    <input type="text" name="nom" id="nom" />
+
+                    <label for="prix">Prix</label>
+
+                    <input type="text" name="prix" id="prix" />
+
+                    <button type="button" onclick="AjouterSaveurJSON()">Ajouter</button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

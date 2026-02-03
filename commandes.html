@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Crèmerie De Coin :: Commandes</title>
+
+        <link href="css/main.css" rel="stylesheet" />
+
+    </head>
+
+    <body onload="RefreshOptions()">
+
+        <main id="commandes">
+
+            <header>
+
+                <p>Crèmerie du Coin</p>
+
+            </header>
+
+ 
+
+            <section>
+
+                <h1>Liste des commandes</h1>
+
+ 
+
+                <ul>
+
+                    <li>2025-01-01 18:00:00 - Crème glacé saveur de <strong>Fraise</strong>.</li>
+
+                    <li>2025-01-01 17:50:00 - Crème glacé saveur de <strong>Chocolat</strong>.</li>
+
+                </ul>
+
+ 
+
+                <h1>Créer une commande</h1>
+
+ 
+
+                <form id="frmAjoutCommande">
+
+                    <label for="saveur">Nom de la saveur</label>
+
+                    <select id="selectSaveur">
+
+                       
+
+                    </select>
+
+                    <button type="button" onclick="AjouterCommandeJSON()">Commander</button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
+
